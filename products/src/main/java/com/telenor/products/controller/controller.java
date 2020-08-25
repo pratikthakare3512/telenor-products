@@ -9,6 +9,7 @@ import javax.persistence.criteria.Root;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,12 +26,11 @@ public class controller {
 	@Autowired
 	private ProductRepository productRepo;
 
-	@RequestMapping("/")
-	public String defaultMessage() {
-		return "Please user Correct endpoint : http://localhost:8080/product ";
-	}
-
-	@RequestMapping("/product")
+	/*
+	 * @RequestMapping("/") public String defaultMessage() { return
+	 * "Please user Correct endpoint : http://localhost:8080/product "; }
+	 */
+	@GetMapping("/product")
 	public String showProducts(@RequestParam(value = "type", required = false) String type,
 			@RequestParam(value = "property", required = false) String attribute,
 			@RequestParam(value = "value", required = false) String value,
