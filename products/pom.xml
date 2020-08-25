@@ -99,5 +99,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>telenor-products</finalName>
 	</build>
 </project>
