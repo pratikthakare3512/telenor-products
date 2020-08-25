@@ -10,10 +10,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.telenor.products.repository.ProductRepository;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
 @ComponentScan({"com.telenor.products"})
 @EntityScan("com.telenor.products")
 @EnableJpaRepositories("com.telenor.products.repository")
+@EnableSwagger2
 public class ProductsApplication implements CommandLineRunner {
 	
 	@Autowired
