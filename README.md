@@ -1,8 +1,42 @@
 # telenor-products
 
+# Docker pull to get the image from docker-hub
+docker pull pratikthakare/testproject
+
+# Docker run
+docker run -p 8085:8085 telenor-product
+
+# git clone
+https://github.com/pratikthakare3512/telenor-products.git
+
+# Test using swagger-ui
+http://localhost:8085/swagger-ui.html
+
+# Test GET Operation using Postman
+http://localhost:8085/api/product?type=subscription&city=Stockholm
 
 
-#Assignment details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
 # Welcome to Telenor's take-home assignment
 **Congratulations on making it this far! Great job!**
 The purpose of this assignment is to give you an opportunity to demonstrate some code.
