@@ -1,4 +1,9 @@
 # telenor-products
+Due to time constraint and busy schedule :) Current version of project only support search based on below optional params !!!!
+type					The product type. (String. Can be 'phone' or 'subscription')
+min_price				The minimum price in SEK. (Number)
+max_price				The maximum price in SEK. (Number)
+city					The city in which a store is located. (String)
 
 # Docker pull to get the image from docker-hub
 docker pull pratikthakare/testproject
