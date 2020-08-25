@@ -38,20 +38,35 @@ Due to time constraint and busy schedule :) Current version of project only supp
   "value" : "10"
 }
 
-## How to run ##
+# How to run using docker
 
-# Docker pull to get the image from docker-hub
+- Docker pull to get the image from docker-hub
 docker pull pratikthakare/testproject
 
-# Docker run
-docker run -p 8085:8085 telenor-product
+- Docker run
+docker run -p 8085:8085 <image-id>
+  
+- When runing using docker image use below command to get the url
+docker-machine url
 
-# git clone
+- Docker Request URL 
+http://192.168.99.100:8085/api/product
+
+- Docker Swagger UI URL
+http://192.168.99.100:8085/swagger-ui.html#/controller/showProductsUsingGET
+
+- curl for docker container
+curl -X GET "http://192.168.99.100:8085/api/product" -H "accept: */*"
+
+
+# How to run using GIT
+
+- git clone and build run
 https://github.com/pratikthakare3512/telenor-products.git
 
-# Test using swagger-ui
+- Test using swagger-ui
 http://localhost:8085/swagger-ui.html
 
-# Test GET Operation using Postman
+- Test GET Operation using Postman
 http://localhost:8085/api/product?type=subscription&city=Stockholm
 
