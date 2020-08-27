@@ -1,6 +1,6 @@
 # telenor-products
 Due to time constraint and busy schedule :) Current version of project only support search based on below optional params !!!!
-All the params are tightly coupled with Controller. In case we add extra param in Query then code change is required.
+All the params are tightly coupled with Controller. In case we add extra param in Query code change is required.
 Its best to make solution dynamic by adding this query param in DATABASE and do some validation against the request So that addition of new param will not have impact on the code.
 
 1. type					    The product type. (String. Can be 'phone' or 'subscription')
